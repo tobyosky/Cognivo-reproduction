@@ -1,9 +1,9 @@
 export default function ButtonNavigation({ icon, bgColor }) {
   return (
-    <div
-      className={`${bgColor} rounded-full flex items-center justify-center p-2 w-fit`}
+    <button
+      className={`${bgColor} rounded-full flex items-center justify-center p-2 w-fit transform transition-all duration-300 hover:scale-110 cursor-pointer`}
     >
-      <button className="cursor-pointer">{icon}</button>
-    </div>
+      {icon}
+    </button>
   );
 }
