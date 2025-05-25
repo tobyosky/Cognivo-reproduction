@@ -25,7 +25,7 @@ export default function Sidebar() {
             <li key={"overview"}>
               <ButtonNavigation
                 icon={<IconLayoutGridFilled size={28} color="#05aae6" />}
-                bgColor={"bg-gray-50"}
+                bgColor={"bg-[#e2fcfc]/60"}
               />
             </li>
             <li key={"goals"}>

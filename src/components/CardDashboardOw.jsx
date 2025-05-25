@@ -8,6 +8,7 @@ export default function CardDashboardOw({
   filterButton,
   bgImg,
   textColor,
+  centerTitle,
 }) {
   return (
     <div
@@ -17,7 +18,11 @@ export default function CardDashboardOw({
       )}
       style={bgImg ? { backgroundImage: `url(${bgImg})` } : {}} // in caso di img di background
     >
-      <div className="flex items-center justify-between">
+      <div
+        className={`flex items-center ${filterButton && "justify-between"} ${
+          centerTitle && "justify-center"
+        }`}
+      >
         <div className="flex gap-5 items-center">
           {icon && <div>{icon}</div>}
           <h3 className={`text-2xl font-[500] ${textColor}`}>{title}</h3>

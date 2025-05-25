@@ -84,7 +84,7 @@ export default function DashboardOverWiewPage() {
           title={"Brain Activity Map"}
           filterButton={<DropdownButtonFilter text={"Last 6 Hours"} />}
         >
-          <div className="min-h-[350px] min-w-[400px]">
+          <div className="min-h-[350px] min-w-[100px]">
             <BrainActivityChart />
           </div>
         </CardDashboardOw>
@@ -103,6 +103,11 @@ export default function DashboardOverWiewPage() {
       </div>
 
       {/* CARD 6 - Pomodoro Timer */}
+      <div className="col-start-3 row-start-3 row-span-2">
+        <CardDashboardOw title={"Pomodoro Timer"} centerTitle={true}>
+          <div className="min-h-[350px] min-w-[100px]"></div>
+        </CardDashboardOw>
+      </div>
 
       {/* CARD 7 - AI Insight of the Day*/}
       <div className="col-start-1 row-start-5">

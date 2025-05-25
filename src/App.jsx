@@ -4,7 +4,7 @@ import DashboardOverWiewPage from "./pages/DashboardOverviewPage";
 
 function App() {
   return (
-    <div className="h-screen max-w-screen p-2 bg-[#fafafa] grid [grid-template-columns:auto_1fr] [grid-template-rows:auto_1fr] gap-x-5">
+    <div className="h-screen w-screen p-2 pb-0 bg-[#fafafa] grid [grid-template-columns:auto_1fr] [grid-template-rows:auto_1fr] gap-x-5">
       {/* SIDEBAR */}
       <div className="row-span-2">
         <Sidebar />
@@ -16,7 +16,7 @@ function App() {
       </header>
 
       {/* MAIN */}
-      <div className="row-span-2 overflow-auto">
+      <div className="row-span-2 overflow-y-auto pt-2 pr-2 pb-2">
         <DashboardOverWiewPage />
       </div>
     </div>
