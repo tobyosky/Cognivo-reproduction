@@ -1,18 +1,24 @@
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
+import DashboardOverWiewPage from "./pages/DashboardOverviewPage";
 
 function App() {
   return (
-    <div className="min-h-screen min-w-screen bg-[#fafafa] p-2 grid [grid-template-columns:auto_1fr] grid-rows-2 gap-5">
+    <div className="h-screen max-w-screen p-2 bg-[#fafafa] grid [grid-template-columns:auto_1fr] [grid-template-rows:auto_1fr] gap-x-5">
       {/* SIDEBAR */}
-      <section className="row-span-2">
+      <div className="row-span-2">
         <Sidebar />
-      </section>
+      </div>
 
       {/* NAVBAR */}
-      <section className="col-span-1">
+      <header className="col-span-1 mb-5">
         <Navbar />
-      </section>
+      </header>
+
+      {/* MAIN */}
+      <div className="row-span-2 overflow-auto">
+        <DashboardOverWiewPage />
+      </div>
     </div>
   );
 }

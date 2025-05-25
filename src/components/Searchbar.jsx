@@ -1,5 +1,5 @@
 import { IconSearch } from "@tabler/icons-react";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 export default function Searchbar() {
   const inputRef = useRef(null);
@@ -13,7 +13,7 @@ export default function Searchbar() {
 
   return (
     <div
-      className="flex gap-3 bg-white px-2 py-3 items-center rounded-4xl max-w-[500px] grow"
+      className="flex gap-3 bg-white px-2 py-3 items-center rounded-4xl max-w-[400px] grow"
       onClick={handleClick}
     >
       <IconSearch stroke={1.5} size={28} color="#99a1af" />
