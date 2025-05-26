@@ -12,7 +12,7 @@ export default function Navbar() {
       </div>
 
       {/* button notifiche e card utente*/}
-      <div className="flex gap-5">
+      <div className="flex gap-5" title="View notifications">
         <ButtonNavigation
           icon={<IconBell stroke={1.5} size={28} color="black" />}
           bgColor={"bg-white"}

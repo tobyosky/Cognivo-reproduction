@@ -16,19 +16,24 @@ export default function Sidebar() {
       <div className="flex flex-col gap-15 items-center">
         {/* LOGO */}
         <section>
-          <IconBrandLoom stroke={1.5} size={50} color="#05aae6" />
+          <IconBrandLoom
+            stroke={1.5}
+            size={50}
+            color="#05aae6"
+            title="Cognivo"
+          />
         </section>
 
         {/* BUTTONS NAGIVAZIONE */}
         <section>
           <ul className="space-y-2">
-            <li key={"overview"}>
+            <li key={"overview"} title="Dashbord">
               <ButtonNavigation
                 icon={<IconLayoutGridFilled size={28} color="#05aae6" />}
                 bgColor={"bg-[#e2fcfc]/60"}
               />
             </li>
-            <li key={"goals"}>
+            <li key={"goals"} title="Goals">
               <ButtonNavigation
                 icon={
                   <IconTargetArrow stroke={1.5} size={28} color="#05aae6" />
@@ -36,13 +41,13 @@ export default function Sidebar() {
                 bgColor={"bg-gray-50"}
               />
             </li>
-            <li key={"daily-goals"}>
+            <li key={"daily-goals"} title="Daily Goals">
               <ButtonNavigation
                 icon={<IconTimeline stroke={1.5} size={28} color="#05aae6" />}
                 bgColor={"bg-gray-50"}
               />
             </li>
-            <li key={"charts"}>
+            <li key={"charts"} title="Charts">
               <ButtonNavigation
                 icon={
                   <IconChartHistogram stroke={1.5} size={28} color="#05aae6" />
@@ -50,7 +55,7 @@ export default function Sidebar() {
                 bgColor={"bg-gray-50"}
               />
             </li>
-            <li key={"settings"}>
+            <li key={"settings"} title="Settings">
               <ButtonNavigation
                 icon={<IconSettings stroke={1.5} size={28} color="#05aae6" />}
                 bgColor={"bg-gray-50"}
@@ -62,14 +67,14 @@ export default function Sidebar() {
 
       {/*BUTTONS DARK MODE E BACK */}
       <section>
-        <ul className="space-y-2">
+        <ul className="space-y-2" title="Dark Mode">
           <li key={"dark-mode"}>
             <ButtonNavigation
               icon={<IconMoonFilled size={28} color="#05aae6" />}
               bgColor={"bg-gray-50"}
             />
           </li>
-          <li key={"back"}>
+          <li key={"back"} title="Back">
             <ButtonNavigation
               icon={<IconArrowBackUp stroke={1.5} size={28} color="#e7363a" />}
               bgColor={"bg-red-100"}

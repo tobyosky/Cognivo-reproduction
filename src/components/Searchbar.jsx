@@ -13,7 +13,7 @@ export default function Searchbar() {
 
   return (
     <div
-      className="flex gap-3 bg-white px-2 py-3 items-center rounded-4xl max-w-[400px] grow"
+      className="flex gap-3 bg-white px-2 py-3 items-center rounded-4xl max-w-[400px] grow focus-within:ring-2 focus-within:ring-[#7ae4f5] transition-all"
       onClick={handleClick}
     >
       <IconSearch stroke={1.5} size={28} color="#99a1af" />

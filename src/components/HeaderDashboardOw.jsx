@@ -15,7 +15,7 @@ export default function HeaderDashboardOw() {
 
       <div className="flex gap-3">
         {/* BUTTON CALENDARIO */}
-        <div>
+        <div title="Calendar">
           <ButtonNavigation
             icon={<IconCalendarWeek stroke={1.5} size={28} />}
             text={"May 2025"}
@@ -24,7 +24,7 @@ export default function HeaderDashboardOw() {
         </div>
 
         {/* BUTTON DOWNLOAD */}
-        <div>
+        <div title="Download">
           <ButtonNavigation
             icon={<IconArrowDownToArc stroke={1.5} size={28} />}
             bgColor={"bg-white"}
@@ -32,7 +32,7 @@ export default function HeaderDashboardOw() {
         </div>
 
         {/* BUTTON LAYOUT */}
-        <div>
+        <div title="Edit layout">
           <ButtonNavigation
             icon={<IconLayout2 stroke={1.5} size={28} />}
             bgColor={"bg-white"}
@@ -40,7 +40,7 @@ export default function HeaderDashboardOw() {
         </div>
 
         {/* BUTTON REFRESH */}
-        <div>
+        <div title="Refresh">
           <ButtonNavigation
             icon={<IconRefresh stroke={1.5} size={30} color="white" />}
             bgColor={"bg-gradient-to-t from-[#03aae6] to-cyan-400"}
