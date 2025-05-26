@@ -1,12 +1,30 @@
-# React + Vite
+# Cognivo Reproduction
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Questo progetto è una riproduzione del design della dashboard [Cognivo](https://dribbble.com/shots/26060284--Cognivo-Brain-Productivity-Dashboard), realizzata come prova tecnica.
+È stato sviluppato con React e Vite, utilizzando JavaScript e diverse librerie per la costruzione dell'interfaccia Frontend.
 
-Currently, two official plugins are available:
+# 🔧 Tecnologie e librerie utilizzate:
+<ul>
+  <li><strong>Vite</strong> – per il setup e la gestione del progetto</li>
+  <li><strong>React</strong> – libreria per l’interfaccia utente</li>
+  <li><strong>Tailwind CSS</strong> – per la stilizzazione</li>
+  <li><strong>Clsx</strong> – per la gestione dinamica delle classi CSS</li>
+  <li><strong>Recharts</strong> – per i grafici </li>
+  <li><strong>Nivo/heatmap</strong> – per la visualizzazione della heatmap</li>
+  <li><strong>Tabler Icons</strong> – icone SVG</li>
+</ul>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# ▶️ Avvio del progetto
+npm install </br>
+npm run dev
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+
+
+
+
+
+
+
