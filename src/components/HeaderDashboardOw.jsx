@@ -43,7 +43,7 @@ export default function HeaderDashboardOw() {
         <div>
           <ButtonNavigation
             icon={<IconRefresh stroke={1.5} size={30} color="white" />}
-            bgColor={"bg-[#05aae6]"}
+            bgColor={"bg-gradient-to-t from-[#03aae6] to-cyan-400"}
           />
         </div>
       </div>

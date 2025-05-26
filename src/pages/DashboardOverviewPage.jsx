@@ -20,7 +20,7 @@ const dataDashboard = {
 
 export default function DashboardOverWiewPage() {
   return (
-    <main className="grid grid-cols-5 [grid-template-rows:auto_1fr_1fr_1fr_1fr] gap-5">
+    <main className="grid grid-cols-5 grid-rows-[auto_auto_auto_auto_auto] gap-5 pb-3">
       {/* HEADER */}
       <header className="col-span-5 rows-start-1">
         <HeaderDashboardOw />
@@ -37,7 +37,7 @@ export default function DashboardOverWiewPage() {
             </p>
           }
         >
-          <div className="text-5xl font-semibold">
+          <div className="text-5xl">
             {dataDashboard.focusTimeH}h {dataDashboard.focusTimeM}m
           </div>
         </CardDashboardOw>
@@ -55,9 +55,7 @@ export default function DashboardOverWiewPage() {
             </p>
           }
         >
-          <div className="text-5xl font-semibold">
-            {dataDashboard.mentalEnergy}/10
-          </div>
+          <div className="text-5xl">{dataDashboard.mentalEnergy}/10</div>
         </CardDashboardOw>
       </div>
 
@@ -72,9 +70,7 @@ export default function DashboardOverWiewPage() {
             </p>
           }
         >
-          <div className="text-5xl font-semibold">
-            {dataDashboard.focusLevel}%
-          </div>
+          <div className="text-5xl">{dataDashboard.focusLevel}%</div>
         </CardDashboardOw>
       </div>
 
@@ -104,8 +100,27 @@ export default function DashboardOverWiewPage() {
 
       {/* CARD 6 - Pomodoro Timer */}
       <div className="col-start-3 row-start-3 row-span-2">
-        <CardDashboardOw title={"Pomodoro Timer"} centerTitle={true}>
-          <div className="min-h-[350px] min-w-[100px]"></div>
+        <CardDashboardOw
+          title={"Pomodoro Timer"}
+          centerTitle={true}
+          cardStyle={"border-2 border-[#7ae4f5] shadow-md shadow-[#22b8f4]/30"}
+        >
+          {/* TIMER (SIMULATO) */}
+          <div className="flex flex-col items-center justify-around grow">
+            <div className="border-30 border-[#06ace6] rounded-full p-5">
+              <div className="bg-white rounded-full shadow-lg py-10 px-3 flex items-center justify-center w-fit h-fit">
+                <p className="text-4xl">10:00</p>
+              </div>
+            </div>
+            <div className="w-full">
+              <button
+                type="button"
+                className="text-white bg-gradient-to-t from-[#03aae6] to-cyan-400 rounded-4xl py-3 w-full cursor-pointer font-light transform transition-all duration-300 hover:scale-105"
+              >
+                Break Session
+              </button>
+            </div>
+          </div>
         </CardDashboardOw>
       </div>
 
@@ -114,19 +129,19 @@ export default function DashboardOverWiewPage() {
         <CardDashboardOw
           title={"AI Insight of the Day"}
           textColor={"text-white"}
-          footer={
-            <button className="bg-white px-3 py-2 rounded-full text-[#05aae6] cursor-pointer">
-              View Detail
-            </button>
-          }
           bgImg={circuitBluImg}
         >
-          <div>
+          <div className="flex flex-col gap-4">
             <p className="text-white">
               Your peak focus time is between {dataDashboard.peakFocusTimeStart}{" "}
               - {dataDashboard.peakFocusTimeEnd}. Keep up the morning rhythm and
               avoid distractions after lunch.
             </p>
+            <div>
+              <button className="bg-white px-4 py-2 rounded-full text-[#05aae6] cursor-pointer  transform transition-all duration-300 hover:scale-105">
+                View Detail
+              </button>
+            </div>
           </div>
         </CardDashboardOw>
       </div>
@@ -155,7 +170,16 @@ export default function DashboardOverWiewPage() {
 
       {/* CARD 9 - Mood Distribution */}
       <div className="col-start-4 row-start-4 row-span-2 col-span-2">
-        <CardDashboardOw title={"Mood Distribution"}>
+        <CardDashboardOw
+          title={"Mood Distribution"}
+          filterButton={
+            <div class="flex flex-wrap items-center justify-center gap-1 cursor-pointer transform transition-all duration-300 hover:scale-105">
+              <span class="w-1 h-1 bg-black rounded-full"></span>
+              <span class="w-1 h-1 bg-black rounded-full"></span>
+              <span class="w-1 h-1 bg-black rounded-full"></span>
+            </div>
+          }
+        >
           <div className="min-h-[350px] min-w-[100px] flex justify-center items-center">
             <MoodDistributionChart />
           </div>
