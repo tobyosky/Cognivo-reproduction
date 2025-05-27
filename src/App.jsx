@@ -26,7 +26,7 @@ function App() {
       </div>
 
       {/* NAVBAR */}
-      <header className="col-span-1 mb-5">
+      <header className="col-span-1 mb-4 mt-3">
         <Navbar />
       </header>
 

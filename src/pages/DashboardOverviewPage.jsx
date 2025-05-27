@@ -107,8 +107,8 @@ export default function DashboardOverWiewPage() {
         >
           {/* TIMER (SIMULATO) */}
           <div className="flex flex-col items-center justify-around grow">
-            <div className="border-30 border-[#06ace6] rounded-full p-5">
-              <div className="bg-white rounded-full shadow-lg py-10 px-3 flex items-center justify-center w-fit h-fit">
+            <div className="border-30 border-[#06ace6] rounded-full p-5 w-full h-full max-w-[220px] max-h-[220px]">
+              <div className="bg-white rounded-full shadow-lg py-10 px-3 flex items-center justify-center ">
                 <p className="text-4xl">10:00</p>
               </div>
             </div>
@@ -117,7 +117,7 @@ export default function DashboardOverWiewPage() {
                 type="button"
                 className="text-white bg-gradient-to-t from-[#03aae6] to-cyan-400 rounded-4xl py-3 w-full cursor-pointer font-light transform transition-all duration-300 hover:scale-105"
               >
-                Break Session
+                Start Session
               </button>
             </div>
           </div>
